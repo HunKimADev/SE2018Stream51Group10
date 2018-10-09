@@ -21,6 +21,10 @@ require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 try {
   drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 }
+
+
+
+
 catch (PDOException $e) {
   // A PDO exception might mean that we are running on an empty database. In
   // that case, just redirect the user to install.php.
